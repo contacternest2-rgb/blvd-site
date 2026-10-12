@@ -359,6 +359,13 @@ footer .mail{font-variant-caps:all-small-caps;letter-spacing:.06em;font-size:15p
 footer .mail a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
 footer .mail a:hover{color:var(--copper)}
 @media (max-width:640px){footer .fr{align-items:flex-start;text-align:left}}
+
+/* add-ons */
+.addon{margin-top:28px;max-width:880px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px;padding:18px 24px;border:1px solid var(--tint-line);border-radius:22px;background:var(--surface)}
+.addon .l{display:flex;flex-wrap:wrap;align-items:center;gap:12px;min-width:0}
+.addon .tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--copper-soft);background:var(--tint);border:1px solid var(--tint-line);border-radius:999px;padding:4px 10px}
+.addon h3{font-size:22px;font-stretch:118%;line-height:1.2}
+.addon .btn{padding:11px 18px;font-size:13px}
 </style>
 
 <header class="nav">
@@ -539,6 +546,10 @@ footer .mail a:hover{color:var(--copper)}
       <li><b>Longer ads count by the minute.</b> Every extra minute uses one more concept from your plan, so a 3&#8209;minute ad uses 3 concepts. Part-minutes round up, so a 2:20 ad counts as 3 concepts.</li>
       <li><b>AI generation credits</b> are funded separately by the client.</li>
     </ul>
+    <div class="addon">
+      <div class="l"><span class="tag">Add-on</span><h3>Found a winner? Scale it.</h3></div>
+      <a class="btn btn-ghost" href="/scale">See how it works <span class="arr">→</span></a>
+    </div>
   </div>
 </section>
 
