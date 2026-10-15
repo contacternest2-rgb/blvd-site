@@ -331,6 +331,8 @@ section.block{padding-block:clamp(72px,10vw,128px);border-bottom:1px solid var(-
 .feat-stats b{font-family:var(--display);font-stretch:118%;font-size:26px;font-weight:800}
 @media (max-width:560px){.feat-stats{grid-template-columns:1fr}}
 .feat-stats span{color:var(--muted);font-size:14px}
+.feat-stats.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:560px){.feat-stats.two{grid-template-columns:1fr}}
 .feat-hint{color:var(--muted);font-size:14px;margin-top:6px}
 @media (max-width:720px){.feat{grid-template-columns:1fr}.feat .feat-vid{width:min(60%,220px);justify-self:center}}
 /* clickable results */
@@ -446,6 +448,18 @@ footer .mail a:hover{color:var(--copper)}
           <div><b>$10K+</b><span>in ad spend behind it</span></div>
           <div><b>1K+</b><span>reactions and 123 shares on another ad's post</span></div>
           <div><b>#1</b><span>VSL hook with the lowest CPA in the account</span></div>
+        </div>
+      </figcaption>
+    </figure>
+    <figure class="feat" style="margin-top:clamp(16px,2vw,24px)">
+      <div class="vid feat-vid" tabindex="0" role="button" aria-label="Play You Keep Saying That, Zapply" data-src="https://media.theblvdstudios.com/ZAP80_web.mp4"><img src="work/v23.jpg" alt="You Keep Saying That ad for Zapply"><span class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
+      <figcaption class="feat-copy">
+        <span class="rank">Top ad · Zapply</span>
+        <strong>50%</strong>
+        <span class="feat-sub">lower new-customer CPA than the account average</span>
+        <div class="feat-stats two">
+          <div><b>30%</b><span>hold rate on an 8-minute ad</span></div>
+          <div><b>#1</b><span>performer on the account within days</span></div>
         </div>
       </figcaption>
     </figure>
