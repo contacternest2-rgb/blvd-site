@@ -368,6 +368,10 @@ footer .mail a:hover{color:var(--copper)}
 .addon .tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--copper-soft);background:var(--tint);border:1px solid var(--tint-line);border-radius:999px;padding:4px 10px}
 .addon h3{font-size:22px;font-stretch:118%;line-height:1.2}
 .addon .btn{padding:11px 18px;font-size:13px}
+.plans.three{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none}
+@media (max-width:1100px){.plans.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.plans.three{grid-template-columns:1fr}}
+.plans.three ~ .addon{max-width:none}
 </style>
 
 <header class="nav">
@@ -524,7 +528,7 @@ footer .mail a:hover{color:var(--copper)}
       <span class="eyebrow">Pricing</span>
       <h2>Fixed monthly output without new hires.</h2>
     </div>
-    <div class="plans">
+    <div class="plans three">
       <article class="plan">
         <span class="tag">Try us first</span>
         <h3>Try Before You Buy</h3>
@@ -554,6 +558,21 @@ footer .mail a:hover{color:var(--copper)}
         </ul>
         <a class="btn btn-solid" href="https://whop.com/checkout/plan_X0QbAGzdfgxiw" target="_blank" rel="noopener">Subscribe <span class="arr">→</span></a>
       </article>
+      <article class="plan main">
+        <span class="tag">High-volume UGC testing</span>
+        <h3>UGC Engine</h3>
+        <div class="price">$2,500<small>/ month</small></div>
+        <ul>
+          <li>25 UGC video concepts per month</li>
+          <li>75 finished video assets per month</li>
+          <li>Full creative direction, AI creators &amp; generation</li>
+          <li>Editing &amp; post-production</li>
+          <li>ElevenLabs plan included</li>
+          <li>Dedicated Frame.io workspace</li>
+          <li>Unlimited revisions</li>
+        </ul>
+        <a class="btn btn-ghost" href="/ugc">See how it works <span class="arr">→</span></a>
+      </article>
     </div>
     <ul class="terms">
       <li><b>One concept</b> = one ad up to 60 seconds, delivered as three hook versions.</li>
@@ -563,10 +582,6 @@ footer .mail a:hover{color:var(--copper)}
     <div class="addon">
       <div class="l"><span class="tag">Add-on</span><h3>Found a winner? Scale it.</h3></div>
       <a class="btn btn-ghost" href="/scale">See how it works <span class="arr">→</span></a>
-    </div>
-    <div class="addon">
-      <div class="l"><span class="tag">New</span><h3>Need volume? UGC Engine: 25 ads a month.</h3></div>
-      <a class="btn btn-ghost" href="/ugc">See the Engine <span class="arr">→</span></a>
     </div>
   </div>
 </section>
