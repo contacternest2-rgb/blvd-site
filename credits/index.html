@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://theblvdstudios.com/credits">
 <meta property="og:site_name" content="BLVD Studios">
-<meta property="og:title" content="Generation Budget | BLVD Studios">
+<meta property="og:title" content="Generation Credits | BLVD Studios">
 <meta property="og:description" content="50,000 Higgsfield credits, managed by BLVD. One payment, never expires.">
 <meta property="og:image" content="https://theblvdstudios.com/og.png">
 <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://theblvdstudios.com/og.png">
 <meta name="robots" content="noindex">
-<title>Generation Budget | BLVD Studios</title>
+<title>Generation Credits | BLVD Studios</title>
 <meta name="description" content="BLVD Generation Budget: 50,000 Higgsfield credits managed by us. One payment, never expires, top up only when it runs out.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -401,6 +401,33 @@ footer .mail a:hover{color:var(--copper)}
 .sp-close p{color:var(--fg2);max-width:52ch}
 @media (max-width:900px){.sp-hero .wrap,.sp-cards{grid-template-columns:1fr}}
 @media (max-width:560px){.sp-cards .ticks{grid-template-columns:1fr}.sp-close{padding:28px 22px}}
+
+/* credits v2 */
+.packs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.packs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.packs{grid-template-columns:1fr}}
+.pk{position:relative;border:1px solid var(--line);border-radius:20px;background:var(--surface);padding:22px;display:grid;gap:8px;align-content:start;transition:border-color .2s,box-shadow .2s}
+.pk.pop{border-color:var(--tint-line);background:linear-gradient(160deg,var(--tint),var(--surface) 70%)}
+.pk.hit{border-color:var(--copper);box-shadow:0 0 0 1px var(--copper),0 0 28px -8px rgba(var(--ac-rgb),.8)}
+.pk .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--copper-soft)}
+.pk b{font-family:var(--display);font-stretch:112%;font-size:20px}
+.pk .pp{font-family:var(--display);font-weight:900;font-stretch:118%;font-size:40px;line-height:1}
+.pk .cc{color:var(--muted);font-size:15px}
+.pk .btn{margin-top:8px;justify-content:center}
+.calc{border:1px solid var(--line);border-radius:22px;background:var(--surface);padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(20px,4vw,48px);align-items:center}
+@media (max-width:760px){.calc{grid-template-columns:minmax(0,1fr)}}
+.calc>div{min-width:0}.amt input{width:100%}
+.calc label{display:block;font-size:15px;color:var(--fg2);margin-bottom:10px}
+.amt{display:flex;align-items:center;border:1.5px solid var(--win-line2);border-radius:14px;background:var(--ink);padding:0 16px}
+.amt span{font-family:var(--display);font-size:28px;color:var(--muted)}
+.amt input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--fg);font-family:var(--display);font-weight:800;font-size:32px;padding:14px 8px}
+.amt:focus-within{border-color:var(--copper)}
+.res{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.res div{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--raise)}
+.res small{display:block;color:var(--muted);font-size:13px;margin-bottom:4px}
+.res strong{font-family:var(--display);font-stretch:112%;font-size:30px;font-weight:800}
+.res p{grid-column:1/-1;margin:0;color:var(--fg2);font-size:15px}
+.res p a{color:var(--copper-soft)}
 </style>
 </head>
 <body>
@@ -419,46 +446,62 @@ footer .mail a:hover{color:var(--copper)}
 <section class="sp-hero">
   <div class="wrap">
     <div class="sp-intro">
-      <span class="eyebrow">Generation budget</span>
+      <span class="eyebrow">Generation credits</span>
       <h1>We handle the credits. <em>You get the ads.</em></h1>
-      <p class="lede">One budget covers every AI generation for your ads. No Higgsfield account, no top-ups to chase. It never expires.</p>
+      <p class="lede">Credits pay for every AI generation on your ads. Priced at cost, $0.06 each, with no markup. They never expire, and you only top up once they run out.</p>
     </div>
-    <aside class="sp-buy" aria-label="Buy the generation budget">
-      <h3>Generation Budget</h3>
-      <div class="price">$3,000<small>one-time, at cost</small></div>
-      <ul class="ticks">
-        <li>50,000 Higgsfield credits</li>
-        <li>About 15 AI ad concepts</li>
-        <li>Never expires, no monthly renewal</li>
-        <li>Top up only when it runs out</li>
-      </ul>
-      <a class="btn btn-solid" href="https://whop.com/checkout/plan_oI1QFwt7yuWhX" target="_blank" rel="noopener">Buy the budget <span class="arr">→</span></a>
-      <span class="note">Secure checkout on Whop</span>
-    </aside>
   </div>
 </section>
 
 <section class="block">
   <div class="wrap">
-    <div class="sp-cards">
-      <article class="sp-card">
-        <span class="k">How far it goes</span>
-        <h3>About 3,000 credits per concept</h3>
-        <div class="flow"><span>50,000 credits</span><i>→</i><span>~15 concepts</span><i>→</i><span class="hi">~45 finished ads</span></div>
-        <p>That's a full month on Core. Song, 3D and longer ads can use more; simple edits use less. We post your remaining balance in Slack.</p>
-      </article>
-      <article class="sp-card">
-        <span class="k">How it works</span>
-        <ul class="ticks">
-          <li>One payment, not a subscription</li>
-          <li>Your budget never expires</li>
-          <li>It doesn't renew each month</li>
-          <li>We ask you to top up only once it's used up</li>
-          <li>We run every generation, you never touch a credit</li>
-        </ul>
-        <p class="small">Prefer your own Higgsfield account? Invite contact.ernest2@gmail.com to your workspace instead.</p>
-      </article>
+    <div class="calc">
+      <div>
+        <label for="usd">How much do you want to spend?</label>
+        <div class="amt"><span>$</span><input id="usd" type="number" inputmode="decimal" min="0" step="100" value="3000" aria-label="Amount in US dollars"></div>
+      </div>
+      <div class="res" aria-live="polite">
+        <div><small>You get</small><strong id="cr">50,000</strong><small>credits</small></div>
+        <div><small>Enough for</small><strong id="co">~15</strong><small>AI ad concepts</small></div>
+        <p id="hint">Matches the 50,000 credit pack below.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="packs">
+        <div class="pk" data-c="10000">
+          
+          <b>10,000 credits</b>
+          <div class="pp">$600</div>
+          <span class="cc">~3 AI concepts</span>
+          <a class="btn btn-ghost" href="https://whop.com/checkout/plan_9qwCCsUZWJyUE/" target="_blank" rel="noopener">Buy <span class="arr">→</span></a>
+        </div>
+        <div class="pk" data-c="25000">
+          
+          <b>25,000 credits</b>
+          <div class="pp">$1,500</div>
+          <span class="cc">~8 AI concepts</span>
+          <a class="btn btn-ghost" href="https://whop.com/checkout/plan_8xWNBNPLEiNAP/" target="_blank" rel="noopener">Buy <span class="arr">→</span></a>
+        </div>
+        <div class="pk pop" data-c="50000">
+          <span class="tag">Fits a Core month</span>
+          <b>50,000 credits</b>
+          <div class="pp">$3,000</div>
+          <span class="cc">~15 AI concepts</span>
+          <a class="btn btn-solid" href="https://whop.com/checkout/plan_BetgOsavMwbt7/" target="_blank" rel="noopener">Buy <span class="arr">→</span></a>
+        </div>
+        <div class="pk" data-c="100000">
+          
+          <b>100,000 credits</b>
+          <div class="pp">$6,000</div>
+          <span class="cc">~30 AI concepts</span>
+          <a class="btn btn-ghost" href="https://whop.com/checkout/plan_1Kwzw08ph4kJF/" target="_blank" rel="noopener">Buy <span class="arr">→</span></a>
+        </div>
+    </div>
+    <p class="small" style="margin-top:16px">Concepts are an estimate at about 3,300 credits each. Song, 3D and longer ads use more; simple edits use less. Need a different amount? Ask in Slack and we'll send an invoice.</p>
   </div>
 </section>
 
@@ -467,29 +510,31 @@ footer .mail a:hover{color:var(--copper)}
     <div class="faq-grid">
     <h2 class="faq-title">FAQ</h2>
     <div class="faq">
-      <details><summary>Is it a monthly payment?</summary><p>No. You pay once. The budget stays until it's used up, then we ask you to top up.</p></details>
+      <details><summary>Is it a monthly payment?</summary><p>No. You pay once. Credits stay until they're used up, then we ask you to top up.</p></details>
       <details><summary>Do unused credits expire?</summary><p>No. Whatever's left carries on into the next month and the one after.</p></details>
-      <details><summary>How do I know what's left?</summary><p>We post your remaining balance in your Slack channel, and warn you before it runs low.</p></details>
-      <details><summary>Is this the same as my plan?</summary><p>No. Your plan covers our work: creative direction, editing and delivery. The budget only pays for AI generation.</p></details>
-      <details><summary>Can I get a refund on unused credits?</summary><p>Credits are non-refundable once purchased, but they never expire, so nothing goes to waste.</p></details>
+      <details><summary>Why at cost?</summary><p>We don't make money on credits. You pay what we pay Higgsfield, $0.06 a credit. Our fee is your plan.</p></details>
+      <details><summary>How do I know what's left?</summary><p>We post your remaining balance in your Slack channel after every job, and warn you before it runs low.</p></details>
+      <details><summary>Can I use my own Higgsfield account instead?</summary><p>Yes. Invite contact.ernest2@gmail.com to your workspace and you won't need credits from us.</p></details>
+      <details><summary>Can I get a refund on unused credits?</summary><p>Credits are non-refundable once bought, but they never expire, so nothing goes to waste.</p></details>
     </div>
-    </div>
-  </div>
-</section>
-
-<section class="closer">
-  <div class="wrap">
-    <div class="sp-close">
-      <div>
-        <h2>Let us handle the credits.</h2>
-        <p>Buy once. We'll tell you when it's time to top up.</p>
-      </div>
-      <a class="btn btn-solid" href="https://whop.com/checkout/plan_oI1QFwt7yuWhX" target="_blank" rel="noopener">Buy the budget <span class="arr">→</span></a>
     </div>
   </div>
 </section>
 
 </main>
+<script>
+(()=>{const R=0.06,PER=3300,P=[[10000,600],[25000,1500],[50000,3000],[100000,6000]];
+const i=document.getElementById('usd'),cr=document.getElementById('cr'),co=document.getElementById('co'),h=document.getElementById('hint'),cards=[...document.querySelectorAll('.pk')];
+function u(){const v=Math.max(0,parseFloat(i.value)||0),c=Math.floor(v/R),n=c/PER;
+cr.textContent=c.toLocaleString('en-US');co.textContent=n<1?(c?'<1':'0'):'~'+Math.round(n);
+const exact=P.find(p=>p[1]===v),next=P.find(p=>p[1]>=v);
+cards.forEach(k=>k.classList.toggle("hit",!!v&&+k.dataset.c===(exact||next||[0])[0]));
+if(!v)h.textContent='Type an amount to see what you get.';
+else if(exact)h.textContent='Matches the '+exact[0].toLocaleString('en-US')+' credit pack below.';
+else if(next)h.innerHTML='Closest pack: '+next[0].toLocaleString('en-US')+' credits for $'+next[1].toLocaleString('en-US')+'. Want exactly $'+v.toLocaleString('en-US')+'? Ask in Slack and we\'ll invoice it.';
+else h.innerHTML='Bigger than our largest pack. Ask in Slack and we\'ll send an invoice for $'+v.toLocaleString('en-US')+'.';}
+i.addEventListener('input',u);u();})();
+</script>
 <footer><div class="wrap"><span>© 2026 BLVD Ent. Ltd., trading as BLVD Studios</span><div class="fr"><span class="mail">Email us at: <a href="mailto:contact@theblvdstudios.com">contact@theblvdstudios.com</a></span></div></div></footer>
 </body>
 </html>
