@@ -11,14 +11,14 @@
 <meta property="og:url" content="https://theblvdstudios.com/scale">
 <meta property="og:site_name" content="BLVD Studios">
 <meta property="og:title" content="Winner Scaling Pack | BLVD Studios">
-<meta property="og:description" content="Turn a winning ad into up to 60 new variations: new hooks, endings, offers, products and languages.">
+<meta property="og:description" content="Turn a winning ad into new finished variations: new hooks, endings, offers, products and languages. 1 credit = 1 finished ad.">
 <meta property="og:image" content="https://theblvdstudios.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://theblvdstudios.com/og.png">
 <title>Winner Scaling Pack | BLVD Studios</title>
-<meta name="description" content="Winner Scaling Pack: 20 variation credits to turn a winning ad into up to 60 new variations, without building a new concept.">
+<meta name="description" content="Winner Scaling Pack: PRO (40 credits) and MAX (80 credits). 1 credit = 1 finished ad, built on a winning ad without starting from scratch.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,600..900&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -400,6 +400,29 @@ footer .mail a:hover{color:var(--copper)}
 .sp-close p{color:var(--fg2);max-width:52ch}
 @media (max-width:900px){.sp-hero .wrap,.sp-cards{grid-template-columns:1fr}}
 @media (max-width:560px){.sp-cards .ticks{grid-template-columns:1fr}.sp-close{padding:28px 22px}}
+/* preview additions: single-column hero, benefit list, pack cards, 3-step how-it-works */
+.sp-hero .wrap.sp-hero-one{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;gap:24px}
+.sp-hero-one .lede{max-width:56ch;margin-inline:auto;font-size:clamp(17px,1.6vw,20px);color:var(--fg2)}
+.bens{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.bens li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;align-items:start}
+.bens .bn{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:var(--tint);border:1px solid var(--tint-line);color:var(--copper-soft);font-family:var(--mono);font-size:13px}
+.bens b{display:block;font-family:var(--display);font-stretch:112%;font-weight:700;font-size:18px;line-height:1.25;color:var(--fg);margin-bottom:4px}
+.bens p{color:var(--muted);font-size:15px}
+.plan h3{font-size:30px}
+.buynote{font-size:13px;color:var(--muted);text-align:center;margin-top:-8px}
+.hiw{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px}
+.hs{position:relative;display:grid;gap:16px;align-content:start;min-width:0}
+.hs .appwin{height:280px}
+.av-c{background:linear-gradient(135deg,#3b2f63,#1e1832);color:var(--fg);font-family:var(--display);font-weight:800;font-size:20px;border:1px solid var(--tint-line)}
+.blvdav img{width:34px}
+.hs .player{inset:14px 22px 22px}
+.hs .bubble{right:12px;bottom:12px}
+.harrow{position:absolute;left:-54px;top:128px;width:56px;height:38px;stroke:var(--copper);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px rgba(var(--ac-rgb),.8))}
+.sp-faq-title{font-family:var(--display);font-stretch:112%;font-weight:800;line-height:1}
+@media (max-width:1000px){.hiw{grid-template-columns:1fr;gap:36px}.harrow{display:none}}
+@media (max-width:560px){.hs .appwin{height:250px}.m p{font-size:18px}.face{width:60px;height:60px}}
+.sp-card h3.sp-gap{margin-bottom:14px}
+img.face{object-fit:cover;border:1px solid var(--tint-line)}
 </style>
 </head>
 <body>
@@ -416,22 +439,10 @@ footer .mail a:hover{color:var(--copper)}
 <main id="top">
 
 <section class="sp-hero">
-  <div class="wrap">
-    <div class="sp-intro">
-      <h1>Found a winner? <em>Scale it</em> 🚀</h1>
-      <p class="lede">Get more out of your winners. Build on winning creative by producing new hooks, iterations, languages, voices and offers without developing a new concept from scratch.</p>
-    </div>
-    <aside class="sp-buy" aria-label="Buy the Winner Scaling Pack">
-      <h3>Winner Scaling Pack</h3>
-      <div class="price">$1,200<small>one-time</small></div>
-      <ul class="ticks">
-        <li>20 variation credits</li>
-        <li>Up to 60 new finished ads</li>
-        <li>Valid for 6 months</li>
-      </ul>
-      <a class="btn btn-solid" href="https://whop.com/checkout/plan_d4dnBAQeEgFds" target="_blank" rel="noopener">Buy the pack <span class="arr">→</span></a>
-      <span class="note">Secure checkout on Whop</span>
-    </aside>
+  <div class="wrap sp-hero-one">
+    <h1>Found a winner? <em>Scale it</em> 🚀</h1>
+    <p class="lede">Get more winners from your winning ads. Test new creative variations and reach new audiences or refresh your offers, all without starting from scratch.</p>
+    <a class="btn btn-solid" href="#packs">View plans <span class="arr">↓</span></a>
   </div>
 </section>
 
@@ -440,12 +451,16 @@ footer .mail a:hover{color:var(--copper)}
     <div class="sp-cards">
       <article class="sp-card">
         <span class="k">How credits work</span>
-        <h3>1 credit = 1 change</h3>
-        <div class="flow"><span>1 change</span><i>→</i><span>applied to all 3 hooks</span><i>→</i><span class="hi">3 finished ads</span></div>
-        <p>20 credits × 3 ads = <b>60 new variations</b> from ads you already know work. We confirm the credit count before each request starts.</p>
+        <h3 class="sp-gap">1 credit = 1 finished ad</h3>
+        <ol class="bens">
+          <li><span class="bn">1</span><div><b>Build on what's already working</b><p>Test different openings, CTAs, and offers while keeping the core creative intact.</p></div></li>
+          <li><span class="bn">2</span><div><b>Take your offer into new markets</b><p>Adapt your winner into new languages or accents.</p></div></li>
+          <li><span class="bn">3</span><div><b>Keep your creative current</b><p>Update a promotion, feature a compatible product, or refresh the edit without restarting the entire production.</p></div></li>
+        </ol>
+        <p class="small">Tell us what you want to change, and get the new variations.</p>
       </article>
       <article class="sp-card">
-        <span class="k">What counts as a change</span>
+        <span class="k">What you can change</span>
         <ul class="ticks">
           <li>New opening hook</li>
           <li>New CTA or ending</li>
@@ -460,6 +475,85 @@ footer .mail a:hover{color:var(--copper)}
   </div>
 </section>
 
+<section class="block" id="packs">
+  <div class="wrap">
+    <div class="head"><h2>Pick your pack</h2></div>
+    <div class="plans">
+      <article class="plan">
+        <span class="tag">PRO Pack</span>
+        <h3>WS PRO Pack</h3>
+        <div class="price">$1,500</div>
+        <ul>
+          <li>40 credits</li>
+          <li>One-time payment</li>
+          <li>Valid for 6 months</li>
+        </ul>
+        <a class="btn btn-solid" href="https://whop.com/checkout/plan_d4dnBAQeEgFds" target="_blank" rel="noopener">Buy the pack <span class="arr">→</span></a>
+        <span class="buynote">Secure checkout on Whop</span>
+      </article>
+      <article class="plan main">
+        <span class="tag">MAX Pack</span>
+        <h3>WS MAX Pack</h3>
+        <div class="price">$2,400</div>
+        <ul>
+          <li>80 credits</li>
+          <li>One-time payment</li>
+          <li>Valid for 6 months</li>
+        </ul>
+        <a class="btn btn-solid" href="https://whop.com/checkout/plan_CLwZnNpHEbZ1M" target="_blank" rel="noopener">Buy the pack <span class="arr">→</span></a>
+        <span class="buynote">Secure checkout on Whop</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="how">
+  <div class="wrap">
+    <div class="head"><h2>Build on your winners</h2></div>
+    <ol class="hiw">
+      <li class="hs">
+        <div class="appwin">
+          <div class="wbar"><small><b>Step 1</b> · Send the winner</small></div>
+          <div class="stage">
+            <div class="chat">
+              <div class="m"><img class="face" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCACgAKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCA68U4CkGaOgrgOgXFZmv3ctrYyGFCWI5boFFaYrH8TgyWH2YBsysBx3FOO4HARg3jtLMHkLZBY85rsPCngRHK3NyvzNyqEfcH+NM0DREa8jBwyryQBwK9O0a1BVQABg1VWdtEb0Kabux+j+GrWBB5cKjHciuht9L2oMIoH061JYqicHHFa0cisMAggccVjFJnY5W2M/7BlQvlqQPU1Bd6UhH3V59q3cMM4Hy9SfSoLh42GM8+natOVC5nc891jwxaXZZXgXJ7gVwFzoz+GNTLW8ZWCYlWPYZr2u4hjZ+Rmuc8VaGl5aMCpK4yKz1TsZVEnqcdpF+lzbCA5EkJKhSeVGen0z3rSA/OotC0RY55VnbcJYj5UuO46/jxVp4jG5UnJHHHem1Y5WMC/nTgKcE/OnhPakIaq5qaKOkRBVhBQIliUDFW0k2jFVVzingkVSA5cGlApAOBSimIXpWL4jmaIRuOiqx981t45rG8TRr9mWRvdcetOO4C+CXDzMzn5mGQvpXommNtYpjnPavMvCBdtTuG/hiXGa6+DxIYGItoHnbnJUZxUTV5HZSklE9AsrbeoHA961ILAp86EH1ryG5+IWtRXOyDTnUDjLRmus8L+Np7oql4Nrn2ximuVbmnM5bHeqjuuMNnoahn0yTiRiozwfWkGqusXmKQV+tcd4g8d3Nu0i20Zd14we5q+aIkmjo5rEeaELYz0NZ+qQGKydZBgjIriLb4gaxPOFm02ZgD94Ka6W18T/2vayafeQmOcr+6c8E+xHes5LqiHK+hytldkSyxKAVjlBHqueDitbV4Ijd+ZAAFkXcQOx6H+Vc3bh7LWby3ZdxkAZMnvnpXbrppuY45EXKkcH+dKrJRjc50rysYAgPpUgh9q3hpDAfdpf7Jb+7XP7ZF+zMMREdqcqGtdtMcdqjawdeq1SqoTgZ+CBQTg1ae1YdqgaMg1qppkuJzApaaKdjFaGY4VQ1u1e6stsSlpEYOABk8df0q9mpI7H7aykMyujAgr1560N2V0aUoKckmY3hO3GyVDhWkIJzx1zW7/adtoDqJlG88hF649Tiquj2Yt9UmCEPhwuAeB7frXcW2j2ku3YoSXOS6r941Dd3dHXSg7WOUPxBFwfIi0WcsWCBzbkg578kce9PtXuL6VpVgRfLcBwmV25OM4PNd2NIvgpCy26oeDiPacVQvl+yQtbibzGzklRhaqaVtiowki8is2hF/mLhSc1xry3ljIkgtUcysdpcFt34D+td0JwmkjJVUChenHSs7T0FxF5DyMqg8c9KXIkVJNHKjx5cxFYpdCuQCSC4gOBjvx2/OrFlqy6rcK8KhWQhircEfTNdk+mXeQq3YI7boQcfjmoRpMERYSKs7dS7LyKcttDNQdrnM+LtGEGt2V/bqqpPEBs/2if8/rXpmjabZHTbbyZEkTyxhx0b1P55ritbsxeXljE7lU8plx2OCMfzqyuuTacfsiHCw/IAOmBXHiE5xSRnGKV2d1/ZVuf7tNbSIPQVxy+Kp8feNSL4qm9a4vZSKudPJo8PoKz7/TYreJnCM+P4V6mslvFUpqCXxNI3U1UacwuiCSUSs4S0lwpwWOKoXMYHO3FT3GsEMw9eazbjUt9dUEyG0c0LabH+rNL5Eo/5ZtWoBgY6ijbXo2OO5k+XL3jb8q0NElFvejzUIV1K88DJ6VNtP1FKo9gfY0nHQ0pz5ZJkIgjsNRUqMGYkvnqDxj9K7jRXSJVJwwxXGapNHdeQQW8xML06D3qxaarPDbpCi7pXO1cnAHuT2FYRdmelFpN3O+uL+IsRuLccKtcneSvPcx4VVjeQhV9cUkN6tlGfMkaW4fq/QD6e1crqjax5n7mZfKDblDKcj8a0d3qx8y3PVI7F300s5UBVBC1z8bNBcNJEVMSN8ymuQi8X6wtv5HBcDG7dxS6LFrUk5kubgtCx3GMDAP40/iJlNXPT7PWbR28ogo+Ohpkt3Gsm4j5TxXMyXEV3HtkLJMnKyL1FPiuLpoZI5drmMZDr0YH+RqZN2sxcytY3IoFvJxIiAm3BIJ9O9T3Pw58Q3NxJcLYgrIdw/eL0Ptmqug6za6Rcwpeg7SQzt1wM88d69Kj+JfhuTpdyj6wtUQjCWknY5qs5JJRVzzw/DnX1HOnv+DL/AI1G3gDXl/5hs5+mD/WvTk+IHhxzxf8A5xN/hUq+OPDrf8xOEfVWH9Kr2NL+f8jD2lT+U8mk8E66g50u6/CMmqk/hLWk66Zd/wDfpv8ACvZx408PH/mLWw+pI/pTj4y8PgZOsWY/7aU/YQ6TQe1l/KfPWqwy21y6SxvGwwNrDBHHpWY7mut+JOuWms+I7meycSQrtRZB0fAAJFcY781MVYpsuqtLinhaXb0roMBmKcFp+2lC0AQXKloHx1A3D6jmtLRPs14ZLWVUZZgJUJ6kdx/Oq20dCKx7e6ayka3OVmtX3xN/eU9vyrKa1udNCWjRN4p0/VvD2LuxtEvrHdhgZCHiGe/qPetvRbPXNXtoTHpNoA7KuZJydobPJwOn+Na1lqEeoWucBo3UE/1rHuLXULSQnTb+8s4iRxbyYIwcjg5HeqSR0wTa93fzOksvAevSyWhNlosX2gElm3HycDPI7mq2q6D4stLV3MekyqoYgKGUnDbQPx6/hUdnq3idbZE/4SOZjGMBnijLdOpO3k1lXUevT3GZ9d1C7DnkM4VBzngAD8qtxVhezq396yKfhq31vV766jv7a1t7aFtrtGTmQ/3Qf51109rDaWyRRqqCRhwB/CP8mmWASys1iXqB0Hes3V9XUeZKTxEPKjGerd6zaRnLR2Ri6tdlr4jPQcVCl4w7067iKz4cc7Vzn6VEI1/u1ChcyctSwL9vWnDUH/vVW8tf7tGxf7tL2Yc5YbUHP8RqCS+dv4jTTEh7UnkKf4aagJzIJZi3OagLc1cNsnpSG0i9D+dWokXL4FGMU8Ck21qZiAU8CgLmnge1IBAtUNY04XEQniwLiL7p7MPQ1pgUy5A8g0pbFRdmZ3hTVChltWbGDkBjjHPI/CuqhViBuKsnUE15jqVzJpt4t5EP4yHA711uieJINRgULKOAMj0qYrmR1U6lnqb02mPNPviXK98VcW3WNQQo3dKI9ZiS2CxtwDzx1qhqWt20J3M4Udcdq1aurFc6W5Je3y20bk/KQOK5q1B1PUI4l+aO3+ZvQueax9U8QT63efZrIHywcM/vXaeHNFOn2QyuXYZLHqTWVSy0RnC8ndkGu2LRmG5UEo67CR/eH/1qyhXcxRxTWjW06B424Kn+f1rkvE9kPDVq1/KJprEHBliiLlM/3wOn16VlTn9lhVpte8ipikAqKzvre/h823kDr+o+o7VPW7TW5hcTbxS4pcZpAKQDSOaO9ONJjFMRa6ilwaco9aXbmqIGgc08DNKF5FPC0WC4gGKjuxiA1YC1FeDEHPrUy2HHc4zU4RNBKCPutu/WsS20+XeTBI8Uqnqp61t6vqVtpVhc3l02IkB47sewHuap2UxCW95GNyOo3D2xWOq1OmnZ6D/M15YzGboEepTmkTQtQ1Bh9rupZFz06Cutt/st3GpiKkkZx6VrWGnjcDtp80u5Tgip4X8LRWmxzH06DFdwluFjxjpUdhbrHGOOfWryIOgFG5okoozTEROAOhrhfi54xTRtO/sKzlH2y7X99tPMUR7fVv5Zrf8AiF43svBFoPuT6lKp+z2+f/H29FH69BXzlqGo3WqXs15dzNPcTuXkdurE1vhsNzS55bHPiMRZcsdy/Za5c2jEwzPHxjKnBrodI8eywgR3yG4XdgSA4f8AHsa4gnHApNxxivRlTUt0cCk1sez6fr2n6mALe5Qv3jY4Yfgav5zXiP2glUkBw68H3966XSPGN9ZRqC6zxDjZLkkfRutc08N/KaKp3PScE0Y61i6b4t069wsr/ZZT/DKcA/RuhrbVldQykEHoQc5rncXHc0TT2LgWnAUDjtTsCqsSC9aeBSDrUgAp2EKB7VleJtXs9E0xru9mEcYOAP4nPoo7msfxf8Q7Dw2r21ttu78D/Vg/JF/vkfyHP0rxvWdc1DxDeG71C4eZx90HhUHoo6AVSpc24c1iTX9bufEl6nm/JCZAscQPCgnv6n3r0jw0v2mCS2I+ZRuUe1eY6Pa/a9St4/8ApoOPWvXdGsmsbm2uyCEaXYx9jx/OssTG1kjow+t2dFo0EKLjO1u4xiumsmjBCjvVW50Mw/vUHB5rNl8Q6ZoVwJNVvI7aJBk7jlm9go5JrCzeiOjTdncxRsQMDH0rhvH/AMV7PwkklhppivNWxgjrHb+7erf7P54rhvHHxvv9ajk07w/HJp1kcq05P7+Ufh9wfTn3rzEZckkknqSa7aOG6zOSriOkS1qOp3msXst7fXElzczNueRzksf8PbtVf7o6896MAcL+JowTXekcYmaQmnY4pCKAFBOKfHNs4qMdKXFAF2LUPLTY2GWtjStfmtGDWd00Dd425jb6r/hXM7aBlTkUnFPcE7H0QDTgKjBpJriO2gknmdY4o1Lux6ADqa883Furu30+2kubuZIYYxlnc4Ary3xZ8T7rUA9no++1tjlTN0kkHt/dH61keMfGFx4lvCFLR2UbfuYv/Zm9z+lcyx7/AICuiFK2rIchkmWY5OSeSfU0qoAuKFXn6U7+EfWtrE3GK8kEqyxEqynII7V19p8VNXisvslxbWtxgcSMpVvxwcH8q5Jh83tSZ9qiVNS3KjNx2O71T41+LdVthbJPb2UWMZtogGP/AAI5P5Vxs9zPdytNczSSyt1d2LMfxNQA+9SIvc8D3qowS2QpTb3Y5V4z2qQHj2pi5b2FPFaIgWgUfSimIKaxwKcajl+4aGA5Pug04H9aQ8LTY2yx9hQBJ0oxTS3IFKTzQB9BA8VwHxU8SG2gj0S3bDTr5s5HZM/Kv4kZ/Cu9yK8K8c3323xfqbg5CP5K/RcD/GuGmrs2lsZOeRmkzls9qaTyfypwHAFdZmOxhfrQV+WlPpQelAhrDNKFGKXqOKWmAAAU4DccdqbuFPWgB4GKUU3NKDVCHZopOtFAAabIMr+NPJpp5xQArdKhgb5WPqxqVjwfpVeFsRn/AHjSe4dCSNtzH2NKz45qGFshz6nFO3B29qExtH//2Q==" alt=""><div><small>You</small><p>This ad is KILLIN IT, let's scale this!</p></div></div>
+              <div class="m"><span class="face blvdav"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAACZCAYAAAAxQuj9AAAIZklEQVR4nO2df8heYxjHP6/3bZomoomIiCZFpEjRlqKVRSuyiFaKKPlDRBZZFvEPEdFEZFlEyaJWarUoqS01TVaLaLKIyPLm7fXH8WzPnp3nec4593Xd9zn3+X5q2d4f13W9x/e9vvd9zn3ue2ZxcZExjP1Ex5gf+vsssPD/fwefWxq9ouZ8SlHzLEd+ljJmgSXADuBLip9xGbAN+M2/zGrM9EB8YjKfAVuBt4FDMRNLfGKUn4EtwIPeiSQ+MY37gFc8Akt8oirbgDWWASU+UZd9wAUWgY6zCCJ6xfkUjemd0ECTxPdNaHCRNbdRiPDSpgEmie+LpkFFr9gFvNvkGyeN+VYDnzStSPSSmVpfPEF8oEmHqE9lAWrCIayp3LAkPuFBJQFOE9/rBoWIfjJVgNPGfJWCCDGBsWNA2a7wZu+4T1QR31bDQkT/WAHcUfaJKrYLsl4RzjH2K9sVsfhl9ANVxXeJcSGifywf/UBV2wVZrwjnEHDC4B91bPc0+1pEzzjqZa064jtIsb5fiBD2DP5Sx3YHyH5FKDPQbLZ7n3Ehon+shmadD4p1fqtNyxF94ifgrKbiA9mvCGMm5CZzrVWrQowS+oRDAhRNWR1iu8PIgkVdPrQSH8A/FDsjCVGFBcuFBccDGw3jibyZtex8w8iGxVS8llTNALc4xRaZ4Lme730KEeqJiCjFy3bLOJdiW4UrYiUU7SbmSub9wJUU3XAGeBj4I2J+0TJidr4qbAbuSl2EMYMNvCexQA9vU7VNfKJH6AUikQyJTyRD4hPJaIv4FjP682TNn30FsBL4uAW1x/hzmLZMOFpRhBGhy8yeAh6zKKSlHL4+beh8d6cuwJAtBjE2kO9L+uuG/9GGzvcLJW+zdxTLxbVvAOsN47WBo65PG8SXvABDrFd253RtYOT6pLbdqxPnt2S7Q8z56V/SGY75xUzd+b4CLk9ZgCEe77Pk0vlKj8xK3flyEZ4XuWzMWXpWW8rOtwz4M1VyY3YDlznEzaXzlbpCys63OWFuazyElwut3BD81oS5RRyem/TJlLabi6X8AJzjEDeH6zNxEpaq8z2dKK8Hstxyrpn2Bak6Xw6/1QN0i+VYPgJumvZFEl8YfwAnG8f8m5HtYztIpV/IFLab0zsaq4zj7aEnwoM0ne9H4MzYSZ2wtNwc3KDW9UjR+XIR3oJRnMvJQ3jf1v2GOY8qJpDT4zSL7UByEB0UJxVcWPebYne+5yPnaxsXAQcoWVLeYX6g4Rktscd8uVxwUbCDgElX6lUtortsIHC2H3PM91bEXMIXk1l+TNuV5eaB2e0l2a6oyk6MHyXGst2c30PtAy5HXsSyXe1U3012UmF1SlNiiU/jvW5R+sKPNTHGfGsj5BA27KawWHfhQZzO9x1wvncSEcR24PrYSWN0PgmvnWzgyP7Y0YUH/p3vbOB7zwSiEX8BJ6YuwrvzveocXzRjGS1Y3ODd+TTL7QYHabgyJQQ94RBQbFG3CLwXM6mn+F50jC18uJlChKfHSOZpu7LcbvMcxSlRbkh8YhIer4Yexst273WKK+JyEo5NxKvz/U5RuMiDBRxWQHl1PgkvL2YpNm43xUN8Ok83T5ZT/4CbiXjY7i7gUuugojWYLSz1EJ9muXljNv7TEw5Rl2kHV1fGWnxRH8+IZOyyCGJtu7Lc/hA89pPtiqYE26+l+J4yjCXaz4+hASxtV5bbL4Kf+0p8IoSgcZ/V87qVRnHawCaK3+oyFijGOoNdSWeHPg5wA3CtX2l5kfrUSdFjNNsVyZD4RDIkPpEMiwlHToPGNRTvtNZlgWKysd60mvYTNNsNnXC8TD5L5k9m/Cy3LiuAvUax2kxS8eXU9XSAX32CrpnGfAXzTnFddvTMhRDxrbcqogWscox9qmPsThNiuweI9GZ7BLw7VK72m8x2cxFeDKwmMm3iYGiApuLL5eRIgHURcpwXIUdslocGaCq+nE4T2hohx+MRcsQm+B5xU/Fp5UY99qcuwIHg84b7fqvlnkh5dAhOCU3E96x5Fel4LVKe4PFRjjQR30PmVeTNjakLcMBknNzkPl8u96w2Ak9EyJPL9RrG5L5o3c53s0XSlhBDeF9HyNFZ6oovp/GeN0uBi1MX4cArVoHq2m4uFvIScL9zjlyu1ShJdqk6BfjVKnFi9Cy3OUlOGt9slTRjTiFv4V1pGaxO58vlom4BbneIm9Mqn3GYOkYfn3BYC+8xIh6ckpBnrANWfTisx0NHcx3wAc1eNuoqj1oHrGq7/wBLrJOLznAn8LZ10Kriy2W8J5rhcnegypgvp02ARH22ewWu0vk+B67yKkC0mnngeK/gVcQny+0vrjfj+3irRbSEaeLTgc39xf2F92m2K8vtJ2cBP3knkfjEKK6TjGEm2e76GAWI1hFFeDC58+2l2OpL9IeoGxtN6nwSXr9YEzvhOPGdG7UKkZpNwLbYScfZ7gfA2si1iDTsBK5JkXic+P6NXYgwpc6hfMk2sBy3ni94Hw6RlNETksZhdQJVI8qSP4LElwuT/j+eEK2KMZTZ7gGqrdCVQONidbz8PuAyo1hBlHW+JfhtkC2aY/HLvhF4wSCOCaPiW4k6Wq6clrqAUUbF9xDqejkwatFnJKliCqNjvu9TFSJcWAd8kbqIcYx2PlluPrR+E/Jh8T2NxJcDF6QuoCrDtrsnZSEimE0UW4F0huHOp4lGN9mKw1YWMRiIby3NLFc2HYeyG8wvAW9GrsOUge1+ApyUuBYxnXmKnUFjHFzjzqDzLUW223ZWpS7AmjmKMyIkvPbxM/A6sCN1IV7MAQ9wZOymMVxa/qI4FSnHUyqPYY5ix/RpnU+itOcQxQqTb+nYLRIr5pDlxmAfxSRhd+I6WsV/Nkc1glAFLy0AAAAASUVORK5CYII=" alt=""></span><div><small>BLVD Studios</small><p>On it 🫡</p></div></div>
+            </div>
+          </div>
+        </div>
+        <p class="fcap"><b>Send us the winner.</b> Deliver the winner you want to build on.</p>
+      </li>
+      <li class="hs">
+        <svg class="harrow" viewBox="0 0 56 38" aria-hidden="true"><path d="M4 22 C 18 6, 34 6, 48 18"/><path d="M40 10 L 49 19 L 38 22"/></svg>
+        <div class="appwin">
+          <div class="wbar"><small><b>Step 2</b> · Approve the direction</small></div>
+          <div class="stage">
+            <div class="rows">
+              <div class="row">6 new hooks <small>✓ 6 credits</small></div>
+              <div class="row lift">Spanish version <small>✓ 1 credit</small></div>
+              <div class="row">New CTA <small>✓ 1 credit</small></div>
+            </div>
+          </div>
+        </div>
+        <p class="fcap"><b>Approve the direction.</b> Let us know the changes you want to test.</p>
+      </li>
+      <li class="hs">
+        <svg class="harrow" viewBox="0 0 56 38" aria-hidden="true"><path d="M4 22 C 18 6, 34 6, 48 18"/><path d="M40 10 L 49 19 L 38 22"/></svg>
+        <div class="appwin">
+          <div class="wbar"><small><b>Step 3</b> · Review and launch</small></div>
+          <div class="stage">
+            <div class="player">
+              <span class="play"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span>
+              <span class="bubble">Approved ✓</span>
+            </div>
+          </div>
+        </div>
+        <p class="fcap"><b>Review and launch.</b> Receive finished variations and put the approved ads to work.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
 <section class="block">
   <div class="wrap">
     <div class="faq-grid">
@@ -468,7 +562,7 @@ footer .mail a:hover{color:var(--copper)}
       <details><summary>When do credits expire?</summary><p>Six months from purchase. Unused credits are non-refundable, non-transferable and have no cash value.</p></details>
       <details><summary>Is it a monthly payment?</summary><p>No. It's a single upfront payment.</p></details>
       <details><summary>Are these the same as Higgsfield credits?</summary><p>No. Our credits cover production: creative adaptation, asset prep, editing, QC and delivery. Higgsfield and other generation usage is funded separately by you.</p></details>
-      <details><summary>How are revisions handled?</summary><p>Each variation includes one revision round. Fixes for our own production errors cost no extra credits. A new hook, offer, language or direction may use another credit.</p></details>
+      <details><summary>How are revisions handled?</summary><p>Each variation includes one revision round. A new hook, offer, language or direction may use another credit.</p></details>
       <details><summary>Does it guarantee another winner?</summary><p>No ad result can be guaranteed. The pack helps you extend and test a pattern that's already working while it still performs.</p></details>
     </div>
     </div>
@@ -480,9 +574,9 @@ footer .mail a:hover{color:var(--copper)}
     <div class="sp-close">
       <div>
         <h2>Ready to scale your winner?</h2>
-        <p>Buy the pack, then send the winning ad, its numbers and the changes you want to test in your Slack channel.</p>
+        <p>Buy the MAX pack, then send the winning ad and the changes you want to test.</p>
       </div>
-      <a class="btn btn-solid" href="https://whop.com/checkout/plan_d4dnBAQeEgFds" target="_blank" rel="noopener">Buy the pack <span class="arr">→</span></a>
+      <a class="btn btn-solid" href="https://whop.com/checkout/plan_CLwZnNpHEbZ1M" target="_blank" rel="noopener">Buy the pack <span class="arr">→</span></a>
     </div>
   </div>
 </section>
