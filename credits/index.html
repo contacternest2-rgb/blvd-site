@@ -459,7 +459,7 @@ h1.two span,h1.two em{white-space:nowrap}h1.two{font-size:clamp(24px,7.2vw,80px)
     <div class="calc">
       <div>
         <label for="usd">How much do you want to spend?</label>
-        <div class="amt"><span>$</span><input id="usd" type="number" inputmode="decimal" min="0" step="100" value="3135" aria-label="Amount in US dollars"></div>
+        <div class="amt"><span>$</span><input id="usd" type="number" inputmode="decimal" min="0" step="100" value="3000" aria-label="Amount in US dollars"></div>
       </div>
       <div class="res" aria-live="polite">
         <div><small>You get</small><strong id="cr">50,000</strong><small>credits</small></div>
@@ -483,19 +483,19 @@ h1.two span,h1.two em{white-space:nowrap}h1.two{font-size:clamp(24px,7.2vw,80px)
         <div class="pk pop" data-c="50000">
           <span class="tag">Fits a Core month</span>
           <b>50,000 credits</b>
-          <div class="pp">$3,135</div>
+          <div class="pp">$3,000</div>
           <span class="cc">~15 AI concepts</span>
           <a class="btn btn-solid" href="https://whop.com/checkout/plan_BetgOsavMwbt7/" target="_blank" rel="noopener">Buy <span class="arr">→</span></a>
         </div>
         <div class="pk" data-c="100000">
           
           <b>100,000 credits</b>
-          <div class="pp">$6,265</div>
+          <div class="pp">$6,000</div>
           <span class="cc">~30 AI concepts</span>
           <a class="btn btn-ghost" href="https://whop.com/checkout/plan_1Kwzw08ph4kJF/" target="_blank" rel="noopener">Buy <span class="arr">→</span></a>
         </div>
     </div>
-    <p class="small" style="margin-top:16px">Concepts are an estimate at about 3,300 credits each. Song, 3D and longer ads use more; simple edits use less. Pack prices include card processing. Need a different amount? Ask in Slack and we'll send an invoice.</p>
+    <p class="small" style="margin-top:16px">Concepts are an estimate at about 3,300 credits each. Song, 3D and longer ads use more; simple edits use less. The 30,000 pack is paid by card and its price includes card processing. The larger packs are paid by bank wire. Need a different amount? Ask in Slack and we'll send an invoice.</p>
   </div>
 </section>
 
@@ -516,9 +516,9 @@ h1.two span,h1.two em{white-space:nowrap}h1.two{font-size:clamp(24px,7.2vw,80px)
 
 </main>
 <script>
-(()=>{const R=0.06,PER=3300,F=1.045,P=[[30000,1880],[50000,3135],[100000,6265]];
+(()=>{const R=0.06,PER=3300,F=1.045,P=[[30000,1880],[50000,3000],[100000,6000]];
 const i=document.getElementById('usd'),cr=document.getElementById('cr'),co=document.getElementById('co'),h=document.getElementById('hint'),cards=[...document.querySelectorAll('.pk')];
-function u(){const v=Math.max(0,parseFloat(i.value)||0),ex=P.find(p=>p[1]===v),c=ex?ex[0]:Math.floor(v/(R*F)),n=c/PER;
+function u(){const v=Math.max(0,parseFloat(i.value)||0),ex=P.find(p=>p[1]===v),c=ex?ex[0]:Math.floor(v/(v<3000?R*F:R)),n=c/PER;
 cr.textContent=c.toLocaleString('en-US');co.textContent=n<1?(c?'<1':'0'):'~'+Math.round(n);
 const exact=P.find(p=>p[1]===v),next=P.find(p=>p[1]>=v);
 cards.forEach(k=>k.classList.toggle("hit",!!v&&+k.dataset.c===(exact||next||[0])[0]));
