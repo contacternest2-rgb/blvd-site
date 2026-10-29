@@ -261,9 +261,10 @@ section.block{padding-block:clamp(72px,10vw,128px);border-bottom:1px solid var(-
 .formats span{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:15px}
 
 /* proof */
-.wall{columns:4 240px;column-gap:14px}
-.wall figure{break-inside:avoid;margin:0 0 14px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
-.wall img{display:block;width:100%;height:auto}
+.wall{columns:2 420px;column-gap:18px}
+#proof .wrap{max-width:1400px}
+.wall figure{break-inside:avoid;margin:0 0 18px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.wall img{display:block;width:100%;height:auto;margin-inline:auto}
 .more{margin-top:28px;display:flex;justify-content:center}
 
 /* lightbox */
@@ -681,7 +682,7 @@ const PROOF=[["p146.webp",1420,278],["p144.webp",1836,588],["p145.webp",1122,462
 const wall=document.getElementById("wall");
 PROOF.forEach(([f,w,h],i)=>{
   const fig=document.createElement("figure");
-  fig.innerHTML=`<img src="proof/${f}" width="${w}" height="${h}" loading="${i<12?"eager":"lazy"}" decoding="async" alt="Client result or message about BLVD Studios work">`;
+  fig.innerHTML=`<img src="proof/${f}" width="${w}" height="${h}" style="max-width:${Math.round(w*1.6)}px" loading="${i<12?"eager":"lazy"}" decoding="async" alt="Client result or message about BLVD Studios work">`;
   wall.appendChild(fig);
 });
 const lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbc=document.getElementById("lbc");let li=0;
