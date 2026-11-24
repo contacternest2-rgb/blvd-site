@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /start
+Disallow: /credits/thanks
+
+Sitemap: https://theblvdstudios.com/sitemap.xml
