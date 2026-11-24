@@ -97,12 +97,13 @@ p{margin:0}
 /* hero */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hero .wrap{position:relative;padding-block:clamp(72px,12vw,150px) clamp(56px,8vw,96px);display:grid;gap:28px}
-.hero h1{font-size:clamp(34px,5.2vw,72px);font-stretch:118%}
+.hero .wrap{position:relative;padding-block:clamp(72px,12vw,150px) clamp(56px,8vw,96px);display:grid;gap:28px;justify-items:center;text-align:center}
+.hero h1{font-size:clamp(30px,4vw,60px);font-stretch:118%}
 .hero h1 .ln{display:block}
-@media (min-width:700px){.hero h1 .ln{white-space:nowrap}}
+@media (min-width:900px){.hero h1 .ln{white-space:nowrap}}
 .hero h1 em{font-style:normal;color:var(--copper-soft)}
-.hero .lede{font-size:clamp(17px,1.6vw,20px);color:var(--fg2)}
+.hero .lede{font-size:clamp(17px,1.6vw,20px);color:var(--fg2);margin-inline:auto}
+.hero .cta-row{justify-content:center}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
 .spec{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:8px}
 .spec b{color:var(--fg);font-weight:500}
@@ -398,7 +399,7 @@ footer .mail a:hover{color:var(--copper)}
 <section class="hero">
   <canvas id="ribbon" aria-hidden="true"></canvas>
   <div class="wrap">
-    <h1><span class="ln">Turn your briefs</span> <span class="ln">into AI ads <em>that sell.</em></span></h1>
+    <h1><span class="ln">Deliver <em>winning AI ads</em> at scale,</span> <span class="ln">for your e&#8209;commerce clients.</span></h1>
     <p class="lede">BLVD Studios is an AI video ad studio for e-commerce growth agencies. We handle creative direction, generation and editing, so you ship more ads to your clients, fast, without more hires.</p>
     <div class="cta-row">
       <a class="btn btn-solid" href="https://cal.com/ernest-anyaele-krkv1y/30min" target="_blank" rel="noopener">Book a call <span class="arr">→</span></a>
